@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>СлОН</title>
+
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="mainNav_cont">
+			<li class="mainNav_cont_item"><a href="index.html" class="mainNav_cont_item_a">About Me</a></li>
+			<li class="mainNav_cont_item"><a href="index.html" class="mainNav_cont_item_a">DraWing</a></li>
+			<li class="mainNav_cont_item"><a href="index.html" class="mainNav_cont_item_a">Fairytale</a></li>
+			<li class="mainNav_cont_item"><a href="index.html" class="mainNav_cont_item_a">Funny Bunny</a></li>
+		</ul>
+	</nav>
+	<nav class="leftNav">
+		<ol class="leftNav_cont" >
+			<li class="leftNav_cont_item"> <p class="leftNav_cont_item_p">Elephant Classic</p></li>
+			<li class="leftNav_cont_item"> <p class="leftNav_cont_item_p">Big ears and proboscis</p></li>
+			<li class="leftNav_cont_item"> <p class="leftNav_cont_item_p">Like penut's like IDIOT</p></li>
+			<li class="leftNav_cont_item"> <p class="leftNav_cont_item_p">Don't be fool buy <span class="intense"> NOW!</span></p></li>
+		</ol>
+		<div class='overlay'></div>
+		<img ID="opa"  src="./images/elephant1.png">
+	</nav>
+
+	<script>
+		var myImg=document.querySelector('#opa');
+		myImg.onclick = function(){
+			this.parentNode.classList.toggle("selected");
+			return false;
+		};
+	</script>
+
+</body>
+</html>

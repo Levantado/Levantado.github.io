@@ -1,0 +1,99 @@
+
+@font-face {font-family: Skim_Milk;  src: url("../fonts/Skim_Milk.ttf");}
+@font-face {font-family: Polaris;  src: url("../fonts/Polaris.ttf");}
+@font-face {font-family: Candy; src: url("../fonts/Candy.ttf");}
+@font-face {font-family: Ojiuce; src: url("../fonts/Ojiuce.ttf");}
+
+body {background: url("../images/pap2.jpg") no-repeat center center fixed;
+	background-size: cover;}
+
+.intense {font-weight: bold}
+
+.mainNav_cont {text-align: center;}
+
+.mainNav_cont_item{
+	display: inline-block;
+	opacity: 0.5;
+	border-radius: 1.5rem;
+	box-shadow: 3px 3px 3px black;
+	padding:5px 10px;
+	margin: 3px 10px;
+	transition: 0.2s ease-in-out;
+}
+
+.mainNav_cont_item:hover {
+	transition: 0.1s ease-in-out;
+	box-shadow: 1px 1px 1px black;
+	opacity: 1;
+}
+
+.mainNav_cont_item_a {
+	font-size: 3em;
+	font-family: "Ojiuce";
+	color: black;
+	text-decoration: none;
+}
+
+
+#opa {
+	position:absolute;
+	opacity:0.5;
+	left: 600px;
+	transition: 0.3s ease-in-out
+}
+
+.leftNav {
+	position:absolute;
+	top: 150px;
+}
+
+.leftNav_cont {
+	position: fixed;
+	list-style: cjk-ideographic;
+	margin: 0;
+	padding: 0;
+	top:170px;
+	left:50px;
+	font-family: "Skim_Milk";
+	color: black;
+}
+
+.leftNav_cont_item {
+	position:relative;
+	padding:5px 10px;
+	margin: 5px 10px;
+	height: 3em;
+	width: 600px;
+}
+.leftNav_cont_item p {
+	position:absolute;
+	transition: 0.3s ease-in-out;
+	font-size: 3em;
+	font-family: "Skim_Milk";
+	color: black;
+	text-decoration: none;
+}
+
+.leftNav_cont_item:hover p{
+	vertical-align: middle;
+	font-size: 4em;
+}
+
+.overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:none;
+	opacity:0;
+}
+
+.leftNav.selected .overlay {
+	display:block;
+}
+
+.leftNav.selected #opa {
+	opacity:1;
+	left: 400px;
+}
