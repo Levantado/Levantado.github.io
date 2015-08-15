@@ -33,7 +33,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 /*Формат ссылок в верхнем меню навигации*/
 .mainNav_cont_item_a {
 	font-size: 3em;
-	font-family: "Ojiuce";
+	font-family: "Ojiuce", Helvetica, sans-serif;
 	color: black;
 	text-decoration: none;}
 
@@ -55,7 +55,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 .mainNav_cont_subList_item_a {
 	line-height: 1.5;
 	font-size: 2em;
-	font-family: "Ojiuce";
+	font-family: "Ojiuce", Helvetica, sans-serif;
 	color: #4b258b;
 	text-decoration: none;}
 
@@ -98,7 +98,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	position:absolute;
 	transition: 0.3s ease-in-out;
 	font-size: 3em;
-	font-family: "Skim_Milk";
+	font-family: "Skim_Milk", Helvetica, sans-serif;
 	color: black;
 	text-decoration: none;}
 
