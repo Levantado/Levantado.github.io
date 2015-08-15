@@ -3,9 +3,10 @@
 @font-face {font-family: Polaris;  src: url("../fonts/Polaris.ttf");}
 @font-face {font-family: Candy; src: url("../fonts/Candy.ttf");}
 @font-face {font-family: Ojiuce; src: url("../fonts/Ojiuce.ttf");}
+
 /* Установка фоновой картинки*/
-body {background: url("../images/pap2.jpg") no-repeat center center fixed;
-	background-size: cover;}
+body {background: url("../images/pap2.jpg") no-repeat center center fixed; background-size: cover;}
+
 /*Устанавливаем полужирный шрифт для span*/
 .intense {font-weight: bold}
 
@@ -20,35 +21,62 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed;
 	box-shadow: 3px 3px 3px black;
 	padding:5px 10px;
 	margin: 3px 10px;
-	transition: 0.2s ease-in-out;
-}
+	transition: 0.2s ease-in-out;}
+
 /*Прописываем поведение при наведении мыши на верхнюю навигацию*/
 .mainNav_cont_item:hover {
-	transition: 0.2s ease-in-out;
 	box-shadow: 1px 1px 1px black;
-	opacity: 1;
-}
-/*Фрмат ссылок в верхнем меню навигации*/
+	opacity: 1;}
+
+/*Формат ссылок в верхнем меню навигации*/
 .mainNav_cont_item_a {
 	font-size: 3em;
 	font-family: "Ojiuce";
 	color: black;
-	text-decoration: none;
-}
+	text-decoration: none;}
+
+/*Формат выпадающего меню в меню навигации*/
+.mainNav_cont_subList_item {
+	display: none;
+	opacity: 0.5;
+	border-radius: 1.5rem;
+	box-shadow: 3px 3px 3px black;
+	padding:2px 5px;
+	margin: 1px 5px;
+	transition: 0.2s ease-in-out;}
+
+/*Формат ссылки в выпадющем меню навигации*/
+.mainNav_cont_subList_item_a {
+	line-height: 1.5;
+	font-size: 2em;
+	font-family: "Ojiuce";
+	color: black;
+	text-decoration: none;}
+
+/*Поведение пунктов выпадающего меню при наведении*/
+.mainNav_cont_subList_item:hover {
+	opacity:1;
+	transition: 0.2s ease-in-out;
+	box-shadow: 1px 1px 1px black;}
+
+/*Поведение выпадающего меню при наведении на заголовок в меню навигации*/
+.mainNav_cont_item:hover .mainNav_cont_subList_item{
+	text-align: center;
+	display: block;}
+
 /*Устанавливаем позиционирование левой ппанелии навигации*/
 .leftNav {
-	position:absolute;
-	top: 150px;
-}
+	position:absolute;}
+
 /*Устанавливаем общее положие контейнера левой панели навигации*/
 .leftNav_cont {
 	position: fixed;
 	margin: 0;
 	padding: 0;
-	top:170px;
+	top:190px;
 	left:50px;
-	color: black;
-}
+	color: black;}
+
 /*Устанавливаем форматирование содержимого контейнера левой панели навигации*/
 .leftNav_cont_item {
 	list-style: cjk-ideographic;
@@ -56,8 +84,8 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed;
 	padding:5px 10px;
 	margin: 5px 10px;
 	height: 3em;
-	width: 600px;
-}
+	width: 600px;}
+
 /*Устанавливаем форматирование параграфа левой панели навигации*/
 .leftNav_cont_item_p  {
 	position:absolute;
@@ -65,13 +93,13 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed;
 	font-size: 3em;
 	font-family: "Skim_Milk";
 	color: black;
-	text-decoration: none;
-}
+	text-decoration: none;}
+
 /*Устанавливаем поведение при наведении на параграф левой панели навигации*/
 .leftNav_cont_item_p:hover {
 	vertical-align: middle;
-	font-size: 4em;
-}
+	font-size: 4em;}
+
 /*параметры слоя оверлей*/
 .overlay {
 	position:absolute;
@@ -80,21 +108,21 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed;
 	width:1280px;
 	height:800px;
 	display:none;
-	opacity:0;
-}
+	opacity:0;}
+
 /*изменение оверлея если левая панель в классе selected*/
 .leftNav.selected .overlay {
-	display:block;
-}
+	display:block;}
+
 /*изменение картинки слона когда левая панель в классе selected*/
 .leftNav.selected #opa {
 	opacity:1;
-	left: 500px;
-}
+	left: 500px;}
+
 /*Параметры картинки слона*/
 #opa {
-	position:absolute;
+	top: 120px;
+	position:fixed;
 	opacity:0.5;
 	left: 600px;
-	transition: 0.3s ease-in-out
-}
+	transition: 0.3s ease-in-out;}
