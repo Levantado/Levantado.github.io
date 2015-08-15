@@ -72,7 +72,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed;
 	vertical-align: middle;
 	font-size: 4em;
 }
-
+/*параметры слоя оверлей*/
 .overlay {
 	position:absolute;
 	top:0;
@@ -82,16 +82,16 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed;
 	display:none;
 	opacity:0;
 }
-
+/*изменение оверлея если левая панель в классе selected*/
 .leftNav.selected .overlay {
 	display:block;
 }
-
+/*изменение картинки слона когда левая панель в классе selected*/
 .leftNav.selected #opa {
 	opacity:1;
 	left: 500px;
 }
-
+/*Параметры картинки слона*/
 #opa {
 	position:absolute;
 	opacity:0.5;
