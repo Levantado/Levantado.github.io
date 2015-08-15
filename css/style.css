@@ -35,6 +35,10 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	color: black;
 	text-decoration: none;}
 
+/*Заготовка для настройка родительских параметров выпадающего меню */
+.mainNav_cont_subList { }
+
+
 /*Формат выпадающего меню в меню навигации*/
 .mainNav_cont_subList_item {
 	display: none;
@@ -50,7 +54,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	line-height: 1.5;
 	font-size: 2em;
 	font-family: "Ojiuce";
-	color: black;
+	color: #4b258b;
 	text-decoration: none;}
 
 /*Поведение пунктов выпадающего меню при наведении*/
@@ -62,7 +66,9 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 /*Поведение выпадающего меню при наведении на заголовок в меню навигации*/
 .mainNav_cont_item:hover .mainNav_cont_subList_item{
 	text-align: center;
-	display: block;}
+	display: block;
+	overflow: auto;
+}
 
 /*Устанавливаем позиционирование левой ппанелии навигации*/
 .leftNav {
