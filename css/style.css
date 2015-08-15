@@ -22,7 +22,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed;
 }
 
 .mainNav_cont_item:hover {
-	transition: 0.1s ease-in-out;
+	transition: 0.2s ease-in-out;
 	box-shadow: 1px 1px 1px black;
 	opacity: 1;
 }
@@ -32,14 +32,6 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed;
 	font-family: "Ojiuce";
 	color: black;
 	text-decoration: none;
-}
-
-
-#opa {
-	position:absolute;
-	opacity:0.5;
-	left: 600px;
-	transition: 0.3s ease-in-out
 }
 
 .leftNav {
@@ -95,5 +87,12 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed;
 
 .leftNav.selected #opa {
 	opacity:1;
-	left: 400px;
+	left: 500px;
+}
+
+#opa {
+	position:absolute;
+	opacity:0.5;
+	left: 600px;
+	transition: 0.3s ease-in-out
 }
