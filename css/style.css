@@ -15,7 +15,9 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 
 /*Устанавливаем форматирование общих блоков для верхней навигации*/
 .mainNav_cont_item{
-	display: inline-block;
+	display: flex;
+	display: -webkit-inline-flex; /* Safari */
+	-webkit-flex-direction: column;
 	opacity: 0.5;
 	border-radius: 1.5rem;
 	box-shadow: 3px 3px 3px black;
@@ -67,7 +69,6 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 .mainNav_cont_item:hover .mainNav_cont_subList_item{
 	text-align: center;
 	display: block;
-	overflow: auto;
 }
 
 /*Устанавливаем позиционирование левой ппанелии навигации*/
