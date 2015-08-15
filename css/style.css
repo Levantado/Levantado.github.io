@@ -10,6 +10,8 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 /*Устанавливаем полужирный шрифт для span*/
 .intense {font-weight: bold}
 
+.mainNav {z-index: 99;}
+
 /*Центруем направление текста для всей верхней навигации*/
 .mainNav_cont {text-align: center;}
 
@@ -61,7 +63,8 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 .mainNav_cont_subList_item:hover {
 	opacity:1;
 	transition: 0.2s ease-in-out;
-	box-shadow: 1px 1px 1px black;}
+	box-shadow: 1px 1px 1px black;
+	z-index: 2;}
 
 
 /*Поведение выпадающего меню при наведении на заголовок в меню навигации*/
@@ -70,7 +73,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	display: block;}
 
 /*Устанавливаем позиционирование левой ппанелии навигации*/
-.leftNav {position:absolute;}
+.leftNav {position:absolute; z-index: 55;}
 
 /*Устанавливаем общее положие контейнера левой панели навигации*/
 .leftNav_cont {
@@ -124,6 +127,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 
 /*Параметры картинки слона*/
 #opa {
+	z-index: 1;
 	top: 120px;
 	position:fixed;
 	opacity:0.5;
