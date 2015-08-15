@@ -47,8 +47,6 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	opacity: 0.5;
 	border-radius: 1.5rem;
 	box-shadow: 3px 3px 3px black;
-	padding:2px 5px;
-	margin: 1px 5px;
 	transition: 0.2s ease-in-out;}
 
 /*Формат ссылки в выпадющем меню навигации*/
@@ -56,7 +54,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	line-height: 1.5;
 	font-size: 2em;
 	font-family: "Ojiuce", Helvetica, sans-serif;
-	color: #4b258b;
+	color: black;
 	text-decoration: none;}
 
 /*Поведение пунктов выпадающего меню при наведении*/
@@ -65,15 +63,14 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	transition: 0.2s ease-in-out;
 	box-shadow: 1px 1px 1px black;}
 
+
 /*Поведение выпадающего меню при наведении на заголовок в меню навигации*/
 .mainNav_cont_item:hover .mainNav_cont_subList_item{
 	text-align: center;
-	display: block;
-}
+	display: block;}
 
 /*Устанавливаем позиционирование левой ппанелии навигации*/
-.leftNav {
-	position:absolute;}
+.leftNav {position:absolute;}
 
 /*Устанавливаем общее положие контейнера левой панели навигации*/
 .leftNav_cont {
@@ -118,8 +115,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	opacity:0;}
 
 /*изменение оверлея если левая панель в классе selected*/
-.leftNav.selected .overlay {
-	display:block;}
+.leftNav.selected .overlay {display:block;}
 
 /*изменение картинки слона когда левая панель в классе selected*/
 .leftNav.selected #opa {
