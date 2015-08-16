@@ -126,6 +126,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	opacity:1;
 	left: 500px;}
 
+/*изменение картинки пропеллера когда левая панель в классе selected*/
 .leftNav.selected #vent {
 	opacity:1;
 	left: 610px;}
@@ -138,13 +139,16 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	left: 600px;
 	transition: 0.3s ease-in-out;}
 
+/*Параметры картинки пропелера*/
 #vent {
+	opacity: 0.5;
 	z-index: 99;
 	position: fixed;
 	top: 110px;
 	left: 710px;
 	transition: 0.3s ease-in-out;}
 
+/*Анимация пропеллера при наведении*/
 #vent:hover {
 	-webkit-animation-iteration-count: 10;
 	transition: 2s ease-in-out;
@@ -154,8 +158,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 .polaroid {
 	display: block;
 	position: relative;
-	z-index: 50;
-	}
+	z-index: 50;}
 
 /*форматирование поларойд картинок*/
 .polaroid img {
@@ -213,6 +216,7 @@ video {
 	background: white;
 	box-shadow: 1px 1px 1px grey;}
 
+/*Параметрый ширины контейнера ленты*/
 .ribbon-cont {
 	width: 85px;
 	height: 88px;
@@ -222,6 +226,7 @@ video {
 	right: 0;
 }
 
+/*Параметры самой ленты*/
 .ribbon-self {
 	font: bold 15px Sans-Serif;
 	text-align: center;
@@ -238,5 +243,4 @@ video {
 	color: #e2d289;
 	box-shadow:         0 0 3px rgba(0,0,0,0.3);
 }
-
 
