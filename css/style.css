@@ -17,6 +17,8 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 
 /*Устанавливаем форматирование общих блоков для верхней навигации*/
 .mainNav_cont_item{
+	z-index: 99;
+	position: relative;
 	display: flex;
 	display: -webkit-inline-flex; /* Safari */
 	-webkit-flex-direction: column;
@@ -65,7 +67,6 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	transition: 0.2s ease-in-out;
 	box-shadow: 1px 1px 1px black;
 	z-index: 2;}
-
 
 /*Поведение выпадающего меню при наведении на заголовок в меню навигации*/
 .mainNav_cont_item:hover .mainNav_cont_subList_item{
