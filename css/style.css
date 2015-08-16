@@ -168,17 +168,20 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	left:600px;
 	transition: 0.3s ease-in-out;}
 
+/*позиционирование и угол фотки 1*/
 #pPol_1 {
 	top: 120px;
 	left:1050px;
 	-webkit-transform: rotate(20deg);
 }
 
+/*позиционирование и угол фотки 2*/
 #pPol_2 {
 	top: 130px;
 	left:1100px;
 	-webkit-transform: rotate(30deg);
 }
+
 
 
 
