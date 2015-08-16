@@ -230,7 +230,6 @@ video {
 .ribbon-self {
 	font: bold 15px Sans-Serif;
 	text-align: center;
-	text-shadow: rgba(255,255,255,0.5)  1px ;
 	-webkit-transform: rotate(45deg);
 	position: relative;
 	padding: 0 0;
