@@ -134,13 +134,13 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	opacity:0.5;
 	left: 600px;
 	transition: 0.3s ease-in-out;}
-
+/*общие параметры класса палароид*/
 .polaroid {
 	display: block;
 	position: relative;
 	z-index: 1;
 	transition: 0.3s ease-in-out;}
-
+/*форматирование поларойд картинок*/
 .polaroid img {
 	padding: 5px 5px 25px 5px;
 	border: 1px solid white;
@@ -150,7 +150,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	background: white;
 	box-shadow: 1px 1px 1px grey;
 }
-
+/*поведение картинок при наведении мышки*/
 .polaroid img:hover  {
 	z-index: 99;
 	width: 150px;
@@ -159,6 +159,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	left:900px;
 	transition: 0.3s ease-in-out;}
 
+/*поведение картинок при нажатии кнопки мышки*/
 .polaroid img:active {
 	padding: 5px 5px 35px 5px;
 	z-index: 99;
