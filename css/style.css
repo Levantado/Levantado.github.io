@@ -134,3 +134,70 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	opacity:0.5;
 	left: 600px;
 	transition: 0.3s ease-in-out;}
+/*Настройка фотографии 1*/
+#photoPol_1 {
+	padding: 5px 5px 25px 5px;
+	border: 1px solid white;
+	box-shadow: 1px 1px 1px grey;
+	background: white;
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	-webkit-transform: rotate(20deg);
+	z-index: 1;
+	top: 120px;
+	left:1050px;
+	transition: 0.3s ease-in-out;}
+
+/*Настройка фотографии 1 при наведении*/
+#photoPol_1:hover{
+	z-index: 99;
+	width: 150px;
+	height: 150px;
+	-webkit-transform: rotate(0deg);
+	left:900px;
+	transition: 0.3s ease-in-out;}
+
+/*Настройка фотографии 1 при нажатии*/
+#photoPol_1:active{
+	padding: 5px 5px 35px 5px;
+	z-index: 99;
+	width: 400px;
+	height: 400px;
+	-webkit-transform: rotate(0deg);
+	left:600px;
+	transition: 0.3s ease-in-out;}
+
+/*Настройка фотографии 2*/
+#photoPol_2 {
+	padding: 5px 5px 25px 5px;
+	border: 1px solid white;
+	box-shadow: 1px 1px 1px grey;
+	background: white;
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	-webkit-transform: rotate(30deg);
+	z-index: 2;
+	top: 130px;
+	left:1100px;
+	transition: 0.3s ease-in-out;}
+
+/*Настройка фотографии 2 при наведении*/
+#photoPol_2:hover{
+	z-index: 99;
+	width: 150px;
+	height: 150px;
+	-webkit-transform: rotate(0deg);
+	left:1000px;
+	transition: 0.3s ease-in-out;}
+
+/*Настройка фотографии 2 при нажатии*/
+#photoPol_2:active{
+	padding: 5px 5px 35px 5px;
+	z-index: 99;
+	width: 400px;
+	height: 400px;
+	-webkit-transform: rotate(0deg);
+	left:600px;
+	transition: 0.3s ease-in-out;}
