@@ -139,51 +139,53 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	display: block;
 	position: relative;
 	z-index: 50;
-	transition: 0.3s ease-in-out;}
+	}
 
 /*форматирование поларойд картинок*/
 .polaroid img {
 	padding: 5px 5px 25px 5px;
 	border: 1px solid white;
-	position: absolute;
+	position: fixed;
 	width: 100px;
 	height: 100px;
-	-webkit-transform: rotate(30deg);
 	background: white;
-	box-shadow: 1px 1px 1px grey;}
+	box-shadow: 1px 1px 1px grey;
+	transition: 0.2s ease-in-out;}
 
+/*Положение и наклон фотографии полоройд 1*/
+.polaroid img:nth-child(1){
+	-webkit-transform: rotate(20deg);
+	top: 150px;
+	left:1050px;}
+
+/*Положение и наклон фотографии полоройд 2*/
+.polaroid img:nth-child(2){
+	-webkit-transform: rotate(30deg);
+	top: 190px;
+	left:1110px;}
+
+/*Положение и наклон фотографии полоройд 1*/
+.polaroid img:nth-child(3){
+	-webkit-transform: rotate(-30deg);
+	top: 210px;
+	left:1080px;}
 
 /*поведение картинок при наведении мышки*/
-.polaroid img:hover  {
+.polaroid img:hover {
 	z-index: 99;
 	width: 150px;
 	height: 150px;
-	-webkit-transform: rotate(0deg);
-	-webkit-transform: translate(-3rem,1rem);
-	transition: 0.3s ease-in-out;}
+	-webkit-transform: translate(-8rem,-1rem);
+	transition: 0.4s ease-in-out;}
 
 /*поведение картинок при нажатии кнопки мышки*/
 .polaroid img:active, :focus {
 	padding: 5px 5px 35px 5px;
 	width: 400px;
 	height: 400px;
-	-webkit-transform: rotate(0deg);
 	-webkit-transform: translate(-30rem,-1rem);
-	transition: 0.3s ease-in-out;}
+	transition: 0.4s ease-in-out;}
 
-/*позиционирование и угол фотки 1*/
-#pPol_1 {
-	position: fixed;
-	top: 150px;
-	left:1050px;
-}
-
-/*позиционирование и угол фотки 2*/
-#pPol_2 {
-	position: fixed;
-	top: 190px;
-	left:1080px;
-}
 
 video {
 	width: 250px;
@@ -211,9 +213,9 @@ video {
 	-webkit-transform: rotate(45deg);
 	position: relative;
 	padding: 0 0;
-	left: -3px;
+	left: 0px;
 	top: 15px;
-	width: 120px;
+	width: 150px;
 	background-color: #7475dc;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#7475dc), to(#2d3be3));
 	background-image: -webkit-linear-gradient(top, #7475dc, #2d3be3);
