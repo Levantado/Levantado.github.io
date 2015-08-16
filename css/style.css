@@ -163,7 +163,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	transition: 0.3s ease-in-out;}
 
 /*поведение картинок при нажатии кнопки мышки*/
-.polaroid img:active {
+.polaroid img:active, :focus {
 	padding: 5px 5px 35px 5px;
 	width: 400px;
 	height: 400px;
@@ -184,6 +184,17 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	top: 190px;
 	left:1080px;
 }
+
+video {
+	width: 250px;
+	position: fixed;
+	top:400px;
+	left:1000px;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid gainsboro;
+	position: absolute;
+	background: white;
+	box-shadow: 1px 1px 1px grey;}
 
 
 
