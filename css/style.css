@@ -74,7 +74,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	display: block;}
 
 /*Устанавливаем позиционирование левой ппанелии навигации*/
-.leftNav {position:absolute; z-index: 55;}
+.leftNav {position:absolute; z-index: 1;}
 
 /*Устанавливаем общее положие контейнера левой панели навигации*/
 .leftNav_cont {
@@ -128,12 +128,12 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 
 /*Параметры картинки слона*/
 #opa {
-	z-index: 1;
 	top: 120px;
 	position:fixed;
 	opacity:0.5;
 	left: 600px;
 	transition: 0.3s ease-in-out;}
+
 /*общие параметры класса палароид*/
 .polaroid {
 	display: block;
@@ -148,16 +148,18 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	position: absolute;
 	width: 100px;
 	height: 100px;
+	-webkit-transform: rotate(30deg);
 	background: white;
-	box-shadow: 1px 1px 1px grey;
-	-webkit-transform: rotate(-20deg);}
+	box-shadow: 1px 1px 1px grey;}
+
 
 /*поведение картинок при наведении мышки*/
 .polaroid img:hover  {
+	z-index: 99;
 	width: 150px;
 	height: 150px;
 	-webkit-transform: rotate(0deg);
-	-webkit-transform: translate(-3em,1em);
+	-webkit-transform: translate(-3rem,1rem);
 	transition: 0.3s ease-in-out;}
 
 /*поведение картинок при нажатии кнопки мышки*/
@@ -166,21 +168,21 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	width: 400px;
 	height: 400px;
 	-webkit-transform: rotate(0deg);
-	-webkit-transform: translate(-30em,1em);
+	-webkit-transform: translate(-30rem,-1rem);
 	transition: 0.3s ease-in-out;}
 
 /*позиционирование и угол фотки 1*/
 #pPol_1 {
 	position: fixed;
-	top: 120px;
+	top: 150px;
 	left:1050px;
 }
 
 /*позиционирование и угол фотки 2*/
 #pPol_2 {
 	position: fixed;
-	top: 130px;
-	left:1100px;
+	top: 190px;
+	left:1080px;
 }
 
 
