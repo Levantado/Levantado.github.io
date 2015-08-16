@@ -126,6 +126,10 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	opacity:1;
 	left: 500px;}
 
+.leftNav.selected #vent {
+	opacity:1;
+	left: 610px;}
+
 /*Параметры картинки слона*/
 #opa {
 	top: 120px;
@@ -133,6 +137,18 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	opacity:0.5;
 	left: 600px;
 	transition: 0.3s ease-in-out;}
+
+#vent {
+	z-index: 99;
+	position: fixed;
+	top: 110px;
+	left: 710px;
+	transition: 0.3s ease-in-out;}
+
+#vent:hover {
+	-webkit-animation-iteration-count: 10;
+	transition: 2s ease-in-out;
+	-webkit-transform: rotate(360deg);}
 
 /*общие параметры класса палароид*/
 .polaroid {
@@ -216,9 +232,9 @@ video {
 	left: 0;
 	top: 15px;
 	width: 150px;
-	background-color: #7475dc;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#7475dc), to(#2d3be3));
-	background-image: -webkit-linear-gradient(top, #7475dc, #2d3be3);
+	background-color: #35b6e3;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3cc0e3), to(#35b6e3));
+	background-image: -webkit-linear-gradient(top, #3cc0e3, #35b6e3);
 	color: #e2d289;
 	box-shadow:         0 0 3px rgba(0,0,0,0.3);
 }
