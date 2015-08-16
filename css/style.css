@@ -192,10 +192,33 @@ video {
 	left:1000px;
 	padding: 5px 5px 5px 5px;
 	border: 1px solid gainsboro;
-	position: absolute;
 	background: white;
 	box-shadow: 1px 1px 1px grey;}
 
+.ribbon-cont {
+	width: 85px;
+	height: 88px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
 
+.ribbon-self {
+	font: bold 15px Sans-Serif;
+	text-align: center;
+	text-shadow: rgba(255,255,255,0.5)  1px ;
+	-webkit-transform: rotate(45deg);
+	position: relative;
+	padding: 0 0;
+	left: -3px;
+	top: 15px;
+	width: 120px;
+	background-color: #7475dc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#7475dc), to(#2d3be3));
+	background-image: -webkit-linear-gradient(top, #7475dc, #2d3be3);
+	color: #e2d289;
+	box-shadow:         0 0 3px rgba(0,0,0,0.3);
+}
 
 
