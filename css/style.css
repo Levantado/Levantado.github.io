@@ -8,7 +8,7 @@
 body {background: url("../images/pap2.jpg") no-repeat center center fixed; background-size: cover;}
 
 /*Устанавливаем полужирный шрифт для span*/
-.intense {font-weight: bold}
+.intense {font-weight: bold; font-size:1em;}
 
 .mainNav {z-index: 99;}
 
@@ -282,10 +282,11 @@ video {
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
-	background: #fff;
+	background: url("../images/pap3.jpg");
+/*	background: #fff;
 	background: -moz-linear-gradient(#fff, #999);
 	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);*/
 }
 
 /*Настройка  кнопки закрыть*/
