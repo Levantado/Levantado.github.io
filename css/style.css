@@ -161,7 +161,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 
 /*форматирование поларойд картинок*/
 .polaroid img {
-	-webkit-filter:sepia(100%);
+	-webkit-filter: sepia(100%);
 	padding: 5px 5px 25px 5px;
 	border: 1px solid white;
 	position: fixed;
@@ -208,7 +208,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	-webkit-transform: translate(-30rem,-1rem);
 	transition: 0.4s ease-in-out;}
 
-
+/*настройки видео*/
 video {
 	-webkit-filter:sepia(100%);
 	width: 250px;
@@ -222,26 +222,22 @@ video {
 
 /*Параметрый ширины контейнера ленты*/
 .ribbon-cont {
-	width: 85px;
-	height: 88px;
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 	position: absolute;
 	top: 0;
 	right: 0;
+	text-align: center;
+	font-family: "Skim_Milk", Helvetica, sans-serif;
+	font-size: 2em;
 }
 
 /*Параметры самой ленты*/
 .ribbon-self {
-	font: bold 15px Sans-Serif;
-	text-align: center;
+	padding: 15px 15px;
+
+	box-shadow: 5px 1px 3px 1px black;
 	-webkit-transform: rotate(45deg);
-	position: relative;
-	padding: 0 0;
-	left: 0;
-	top: 15px;
-	width: 150px;
-	background-color: #e2d289;
-	color: #000000;
-	box-shadow:         0 0 3px rgba(0,0,0,0.3);
-}
+	background: -webkit-linear-gradient(#faf1cc, #eae1bd,#faf1cc)}
 
