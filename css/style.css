@@ -311,3 +311,18 @@ video {
 /*измениние цвета кнопики закрыть при наведении*/
 .close:hover { background: #bdb498; }
 
+/*Параметры контейнера подвала*/
+footer {
+	position: absolute;
+	top: 600px;
+	left: 10px;}
+
+/*Параметры ссылки в подвале*/
+footer a {
+	color: #000;
+	font-family: "Ojiuce", Helvetica, sans-serif;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px black;}
+
+/*Поведение ссылки в подвале при наведении*/
+footer a:hover {text-shadow: 0 0 1px black;}
