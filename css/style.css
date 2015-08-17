@@ -291,7 +291,6 @@ video {
 
 /*Настройка  кнопки закрыть*/
 .close {
-	background: #eae1bd;
 	color: #000000;
 	line-height: 25px;
 	position: absolute;
@@ -307,7 +306,7 @@ video {
 	-moz-box-shadow: 1px 1px 3px #000;
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
-}
+	background: radial-gradient(#faf1cc, #aea68c);}
 
 /*измениние цвета кнопики закрыть при наведении*/
 .close:hover { background: #bdb498; }
