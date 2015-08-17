@@ -22,6 +22,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	display: flex;
 	display: -webkit-inline-flex; /* Safari */
 	-webkit-flex-direction: column;
+	flex-direction: column;
 	opacity: 0.5;
 	border-radius: 1.5rem;
 	box-shadow: 3px 3px 3px black;
@@ -151,7 +152,8 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 /*Анимация пропеллера при наведении*/
 #vent:hover {
 	transition: 2s ease-in-out;
-	-webkit-transform: rotate(360deg);}
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);}
 
 /*общие параметры класса палароид*/
 .polaroid {
@@ -162,6 +164,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 /*форматирование поларойд картинок*/
 .polaroid img {
 	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
 	padding: 5px 5px 25px 5px;
 	border: 1px solid white;
 	position: fixed;
@@ -174,6 +177,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 /*Положение и наклон фотографии полоройд 1*/
 .polaroid img:nth-child(1){
 	-webkit-transform: rotate(20deg);
+	transform: rotate(20deg);
 	top: 150px;
 	left:1050px;
 	}
@@ -182,6 +186,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 /*Положение и наклон фотографии полоройд 2*/
 .polaroid img:nth-child(2){
 	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
 	top: 190px;
 	left:1110px;
 	}
@@ -189,6 +194,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 /*Положение и наклон фотографии полоройд 1*/
 .polaroid img:nth-child(3){
 	-webkit-transform: rotate(-30deg);
+	transform: rotate(-30deg);
 	top: 210px;
 	left:1080px;}
 
@@ -198,6 +204,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	width: 150px;
 	height: 150px;
 	-webkit-transform: translate(-8rem,-1rem);
+	transform: translate(-8rem,-1rem);
 	transition: 0.4s ease-in-out;}
 
 /*поведение картинок при нажатии кнопки мышки*/
@@ -206,11 +213,13 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	width: 400px;
 	height: 400px;
 	-webkit-transform: translate(-30rem,-1rem);
+	transform: translate(-30rem,-1rem);;
 	transition: 0.4s ease-in-out;}
 
 /*настройки видео*/
 video {
 	-webkit-filter:sepia(100%);
+	filter: sepia(100%);
 	width: 250px;
 	position: fixed;
 	top:400px;
@@ -239,5 +248,7 @@ video {
 
 	box-shadow: 5px 1px 3px 1px black;
 	-webkit-transform: rotate(45deg);
-	background: -webkit-linear-gradient(#faf1cc, #eae1bd,#faf1cc)}
+	transform: rotate(45deg);
+	background: -webkit-linear-gradient(#faf1cc, #eae1bd,#faf1cc);
+	background:linear-gradient(#faf1cc, #eae1bd,#faf1cc)}
 
