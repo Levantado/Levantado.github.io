@@ -208,7 +208,7 @@ body {background: url("../images/pap2.jpg") no-repeat center center fixed; backg
 	transition: 0.4s ease-in-out;}
 
 /*поведение картинок при нажатии кнопки мышки*/
-.polaroid img:active, :focus {
+.polaroid img:active, .polaroid img:focus {
 	padding: 5px 5px 35px 5px;
 	width: 400px;
 	height: 400px;
@@ -283,10 +283,6 @@ video {
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: url("../images/pap3.jpg");
-/*	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);*/
 }
 
 /*Настройка  кнопки закрыть*/

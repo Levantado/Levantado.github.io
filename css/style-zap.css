@@ -1,0 +1,101 @@
+@font-face {font-family: Bebas;  src: url("../fonts/ZAP/bebas/BebasNeue%20Regular.otf");}
+@font-face {font-family: Boycott; src: url("../fonts/ZAP/Boycott/BOYCOTT_.ttf");}
+body {background: url("../images/ZAP/back_main2.jpg") no-repeat center center fixed; background-size: cover;}
+
+main {text-align: center; position: relative; top: 100px; list-style: none;}
+main h1 {
+    position: relative;
+    font-size: 10em;
+    font-family: "Bebas", Helvetica, sans-serif;
+    color: #000000;
+    text-shadow: 1px 1px 2px #000000;}
+
+main a {
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    border-radius: 80px;
+    background: url("../images/ZAP/st2.jpg") no-repeat center center fixed; background-size: cover;
+   /* background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+
+    linear-gradient(180deg, hsl(0,0%,78%)  0%,
+            hsl(0,0%,90%) 47%,
+            hsl(0,0%,78%) 53%,
+           hsl(0,0%,70%)100%);*/
+
+    color: #000000;
+    position: relative;
+    font-size: 3em;
+    padding: 10px 25px 10px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid black;
+    text-shadow: 2px 2px 1px white;
+    box-shadow: 4px 4px 5px 1px #000;}
+
+main a:hover {
+    box-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px white;
+}
+
+main a:active {
+    color: #3522bf;
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: "Bebas", Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+/*поведение модального окна при клике*/
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+/* влияние модального окна на всех родителей*/
+.modalDialog > div {
+    width: 400px;
+    height: auto;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: url("../images/pap3.jpg");
+}
+
+/*Настройка  кнопки закрыть*/
+.close {
+    background-image: url("../images/ZAP/stainless.jpg");
+    /*url("../images/ZAP/stainless.jpg") right:38px top:25px no-repeat center center fixed; background-size: cover;*/
+    font-size: 0.3em;
+    height: auto;
+    width: auto;
+    color: #000000;
+    line-height: 1em;
+    position: absolute;
+    right: -38px;
+    text-align: center;
+    top: -25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px #000;}
+
+
+/*измениние цвета кнопики закрыть при наведении*/
+.close:hover {color: crimson; box-shadow: 1px 1px 1px #000; }
