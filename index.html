@@ -57,9 +57,9 @@
 		<img ID="opa"  alt="Слон главный" src="./images/elephant1.png">
 	</nav>
 	<div class="polaroid">
-		<img ID="pPol_1"  alt="Слон 1" src="./images/slon5.jpg">
-		<img ID="pPol_2"  alt="Слон 2" src="./images/slon6.jpg">
-		<img ID="pPol_3"  alt="Слон 3" src="./images/slon7.jpg">
+		<img ID="pPol_1" class="polaR" alt="Слон 1" src="./images/slon5.jpg">
+		<img ID="pPol_2" class="polaR" alt="Слон 2" src="./images/slon6.jpg">
+		<img ID="pPol_3" class="polaR" alt="Слон 3" src="./images/slon7.jpg">
 	</div>
 	<video src="https://i.imgur.com/50Bc0wC.mp4" autoplay loop></video>
 	<footer> <a href="Second-trip.html"> ZAP ME!</a> </footer>
@@ -69,5 +69,29 @@
 			this.parentNode.classList.toggle("selected");
 			return false;}
 	</script>
+
+	<script>
+		var wrap = document.getElementsByClassName('polaroid')[0];
+
+		wrap.onmousedown = function(e) {
+			if (e.target.tagName=='IMG'){
+				var ball=e.target;
+				moveAt(e);
+				ball.style.zIndex = 1000;
+				function moveAt(e) {
+					ball.style.left = e.pageX - ball.offsetWidth / 2 + 'px';
+					ball.style.top = e.pageY - ball.offsetHeight / 2 + 'px';
+				}
+				document.onmousemove = function(e) {
+					moveAt(e);
+				};
+				ball.onmouseup = function() {
+					document.onmousemove = null;
+					ball.onmouseup = null;
+				}
+			}
+		}
+	</script>
+
 </body>
 </html>

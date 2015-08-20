@@ -19,7 +19,7 @@ main a {
     color: #000000;
     position: relative;
     font-size: 3em;
-    padding: 10px 25px 10px;
+    padding: 10px 20px 10px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
@@ -38,6 +38,7 @@ main a:active {
 
 .modalDialog {
     position: fixed;
+    font-size: 1.5rem;
     font-family: "Bebas", Helvetica, sans-serif;
     top: 0;
     right: 0;
@@ -60,14 +61,15 @@ main a:active {
 
 /* влияние модального окна на контейнерй*/
 .modalDialog > div {
-    width: 400px;
+    width: 500px;
     height: auto;
     position: relative;
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
-    background: url("../images/pap3.jpg");
+    background: url("../images/pap3.jpg") no-repeat center center fixed; background-size: cover;;
 }
+.modalDialog .choButton {   font-size: 2rem;}
 
 /*Настройка  кнопки закрыть*/
 .close {
