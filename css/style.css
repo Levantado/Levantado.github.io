@@ -7,7 +7,7 @@
 /* Установка фоновой картинки*/
 body {background: url("../images/pap2.jpg") no-repeat center center fixed; background-size: cover; position: relative;}
 
-/*Устанавливаем полужирный шрифт для span*/
+/*Устанавливаем полужирный шрифт для span  */
 .intense {font-weight: bold; font-size:1em;}
 
 .mainNav {z-index: 99;}
